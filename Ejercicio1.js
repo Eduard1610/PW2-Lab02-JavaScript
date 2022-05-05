@@ -3,7 +3,6 @@
 function indicadorDia() {
     const d = new Date();
     let day = d.getDay();
-    console.log(day);
     let nombre = "";
     switch (day){
         case 0:
@@ -28,7 +27,7 @@ function indicadorDia() {
             nombre = "sábado";
             break;
     }
-    console.log(nombre);
+    console.log('El día de hoy es '+ nombre);
 }
 
 indicadorDia();
