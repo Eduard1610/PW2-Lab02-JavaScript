@@ -15,6 +15,10 @@
 	    if(today.getMonth() == 7 && today.getDate() > 15){
 			    arequipaYear = arequipaYear + 1;
 			}
+	    // Almacenamos la fecha del día de arequipa que tomaremos para la cantidad de días hasta esa fecha
+	    let arequipaDate = new Date(arequipaYear, 7, 15);
+	    // Cantidad de milisegundos del día
+	    let dayMilliseconds = 1000 * 60 * 60 * 24;
 	</script>
     </body>
 </html>
