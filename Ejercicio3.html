@@ -11,7 +11,18 @@
 	    // Obtenemos la fecha actual y guardamos el año en la varibale arequipaYear
 	    let today = new Date();
 	    let arequipaYear = today.getFullYear();
-	    
+	    // Comprobamos si la fecha actual ya ha pasado el día de arequipa para así contar la fecha para el siguiente año
+	    if(today.getMonth() == 7 && today.getDate() > 15){
+			    arequipaYear = arequipaYear + 1;
+			}
+	    // Almacenamos la fecha del día de arequipa que tomaremos para la cantidad de días hasta esa fecha
+	    let arequipaDate = new Date(arequipaYear, 7, 15);
+	    // Cantidad de milisegundos del día
+	    let dayMilliseconds = 1000 * 60 * 60 * 24;
+	    // Calculamos la cantidad de días faltantes y restamos 1 para no contar el día actual
+	    let remainingDays = Math.ceil((arequipaDate.getTime() - today.getTime()) / (dayMilliseconds)-1);
+	    // Imprimimos los días que faltan
+	    document.write("Hay"+remainingDays+"días para el siguiente Día de Arequipa.");
 	</script>
     </body>
 </html>
