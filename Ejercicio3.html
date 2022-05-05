@@ -11,7 +11,10 @@
 	    // Obtenemos la fecha actual y guardamos el año en la varibale arequipaYear
 	    let today = new Date();
 	    let arequipaYear = today.getFullYear();
-	    
+	    // Comprobamos si la fecha actual ya ha pasado el día de arequipa para así contar la fecha para el siguiente año
+	    if(today.getMonth() == 7 && today.getDate() > 15){
+			    arequipaYear = arequipaYear + 1;
+			}
 	</script>
     </body>
 </html>
