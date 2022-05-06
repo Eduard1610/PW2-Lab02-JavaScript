@@ -10,9 +10,28 @@ btn.addEventListener("click" , function(){
 
     //Creo un nuevo div que se mostrará
     const resultado = document.createElement("DIV");
+
+    //Cpaturo e invierto el texto ingresado por el usuario
+    //const texto  ;
+    
+
+    //
     resultado.innerHTML = `
-        <p> El texto invertido es  : <b> ${inputUser.value} </b><p>
+        <p>El texto invertido es  : <b>  </b></p>
         `
+
+    //Agrego el nuevo elemento al body
     const body = document.querySelector("body");
     body.appendChild(resultado);
 });
+
+
+
+function revertirTexto (texto){
+    //Separo el String en un arreglo
+    const textoInvertido = texto.split("");
+    //Invierto sus elementos
+    textoInvertido.reverse();
+    //Los vuelvo a unir en un string
+    return textoInvertido.join("");
+}
