@@ -6,18 +6,14 @@ btn.addEventListener("click" , function(){
     //Obtengo el input donde el usuario escribio la palabra
     const inputUser = document.getElementById("palabra");
 
-    //console.log(inputUser.value);
+    //Cpaturo e invierto el texto ingresado por el usuario
+    const texto  = revertirTexto(inputUser.value);
 
     //Creo un nuevo div que se mostrará
     const resultado = document.createElement("DIV");
 
-    //Cpaturo e invierto el texto ingresado por el usuario
-    //const texto  ;
-    
-
-    //
     resultado.innerHTML = `
-        <p>El texto invertido es  : <b>  </b></p>
+        <p>El texto invertido es  : <b> ${texto} </b></p>
         `
 
     //Agrego el nuevo elemento al body
