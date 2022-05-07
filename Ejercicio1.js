@@ -1,10 +1,22 @@
 //Ejercicio 1
 
+//La función nos indica el día actual
 function indicadorDia() {
+
+    //d es la fecha actual (hoy) 
     const d = new Date();
+
+    /*day nos da el número de día actual
+     *domingo = 0
+     *lunes = 1
+     *Para todos los días de la semana
+     * */
     let day = d.getDay();
+
+    //El nombre contendrá nuestro día de semana
     let nombre = "";
-    switch (day){
+    //De acuerdo al día actual se asignará un nombre
+    switch (day) {
         case 0:
             nombre = "domingo";
             break;
@@ -27,7 +39,8 @@ function indicadorDia() {
             nombre = "sábado";
             break;
     }
-    console.log('El día de hoy es '+ nombre);
+    //mostramos en consola
+    console.log("El día de hoy es " + nombre);
 }
 
 indicadorDia();
