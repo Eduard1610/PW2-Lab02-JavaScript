@@ -20,7 +20,7 @@
 </div>
 
 <div align="center">
-<span style="font-weight:bold;">GUÍA DE LABORATORIO</span><br />
+<span style="font-weight:bold;">INFORME DE LABORATORIO</span><br />
 </div>
 
 
@@ -37,11 +37,16 @@
 <tr>
 <td>FECHA INICIO::</td><td>02-May-2022</td><td>FECHA FIN:</td><td>06-May-2022</td><td>DURACIÓN:</td><td>04 horas</td>
 </tr>
-<tr><td colspan="6">RECURSOS:
-    <ul>
-        <li><a href="https://www.w3schools.com/js">https://www.w3schools.com/js</a></li>        
-    </ul>
-</td>
+<tr>
+    <td colspan="6">
+        INTEGRANTES:
+        <ul>
+            <li>Eduardo Franshua Durand Obando</li>  
+            <li>Jordy Rolando Tejada Lazo</li>  
+            <li>Jean Carlo Leonel Chua Aguilar</li>  
+            <li>Michael Steve Hurtado Bejarano</li>        
+        </ul>
+    </td>
 </<tr>
 <tr><td colspan="6">DOCENTES:
 <ul>
@@ -51,70 +56,6 @@
 </<tr>
 </tdbody>
 </table>
-
-# JavaScript
-
-[![License][license]][license-file]
-[![Downloads][downloads]][releases]
-[![Last Commit][last-commit]][releases]
-
-[![Debian][Debian]][debian-site]
-[![Git][Git]][git-site]
-[![GitHub][GitHub]][github-site]
-[![Vim][Vim]][vim-site]
-[![Java][Java]][java-site]
-
-#
-
-## OBJETIVOS TEMAS Y COMPETENCIAS
-
-### OBJETIVOS
-
-- Desarrollar habilidades básicas de programación usando JavaScript
-
-### TEMAS
-- JavaScript sintaxis básica, programación funcional.
-
-<details>
-<summary>COMPETENCIAS</summary>
-
-- C.c Diseña responsablemente sistemas, componentes o procesos para satisfacer necesidades dentro de restricciones realistas: económicas, medio ambientales, sociales, políticas, éticas, de salud, de seguridad, manufacturación y sostenibilidad.
-- C.m Construye responsablemente soluciones siguiendo un proceso adecuado llevando a cabo las pruebas ajustada a los recursos disponibles del cliente.
-- C.p Aplica de forma flexible técnicas, métodos, principios, normas, estándares y herramientas de ingeniería necesarias para la construcción de software e implementación de sistemas de información.
-
-</details>
-
-## CONTENIDO DE LA GUÍA
-
-### MARCO CONCEPTUAL
-
-- https://www.w3schools.com/js
-
-## INTEGRANTES
-
-- Eduardo Franshua Durand Obando.
-- Jordy Rolando Tejada Lazo.
-
-## EJERCICIO RESUELTO POR EL DOCENTE
-- Escriba la función arrayGenerator que reciba tres enteros positivos: n, min y max, con min < max y devuelva un arreglo de n números enteros positivos entre los valores dados (incluyendo min, pero no max). Para la generación de números aleatorios use Math.random() - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random.
-
-    - ![arrayGenerator.js](Img/arrayGenerator.js.png)
-
-- Escriba la función voteCounting; que reciba un arreglo votes, conteniendo los votos para varios candidatos considerando un número para cada candidato, y devuelva un objeto con el número que identifica al candidato ganador y los votos que este obtuvo.
-
-     - ![votesCounting.js](Img/votesCounting.js.png)
-
-- Explicación del arreglo contador
-    ```sh
-    v = [2, 2]
-    c = [0, 0, 0]
-    c[v[0]] ++
-    c -> [0, 0, 1]
-    c[v[1]] += 1
-    c -> [0, 0, 2]
-    ```
-
-#
 
 ## EJERCICIOS PROPUESTOS
 - Ejercicio 01: Escriba una función que reciba el número de día de la fecha actual new Date() - https://www.w3schools.com/jsref/jsref_obj_date.asp  y devuelva el texto del día de la semana correspondientes. Por ejemplo si recibe 0, devolvería “Domingo”.
