@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Ejercicio 4</title>
+	</head>
+	<body>
+	    <h1>Ingrese link de google meet</h1>
+	    <input type = "text" id = "url1">
+	    <br>
+    	    <button id="boton">Enviar</button>
+            <br>
+   	    <p>El código es: </p>
+   	    <p id="codigo"></p>
+	    <script>
+	         function extraer() {
+            	 	let part1 = document.getElementById("url1").value.substring(24, 27);
+            		let part2 = document.getElementById("url1").value.substring(28, 32);
+            		let part3 = document.getElementById("url1").value.substring(33, 36);
+            		document.getElementById("codigo").innerHTML = part1+part2+part3;
+        	 }
+        	 document.getElementById("boton").onclick = function () {
+             	 extraer();
+        	 }
+	    </script>
+	</body>
+</html>
