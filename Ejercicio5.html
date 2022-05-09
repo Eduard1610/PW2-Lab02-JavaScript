@@ -11,17 +11,25 @@
             let contenedorTabla = document.getElementById("contenedor");//div del contenedor de tabla
 	    let tabla = "<table>";//inicio de tabla
 
+	    let suma = 0;
+
 	    for (let i = 1; i <= numF; i++){
 		let random = Math.floor(Math.random()*100+1);
 		tabla += "<tr>";
                 tabla += "<td>";
                 tabla += random;
                 tabla += "</td>";
-                tabla += "</tr>";	
+                tabla += "</tr>";
+		suma += random;
 	    }
+	    
+	    tabla += "</table>";
 
+	    let boton = + `<button type="buton" onclick="imprimirSuma(${suma})">Suma</button>`;
 
-	    contenedorTabla.innerHTML = tabla;//reemplazando el div vacío por la tabla de prueba
+	    let contenidoDiv = tabla + boton;
+
+	    contenedorTabla.innerHTML = contenidoDiv;//reemplazando el div vacío por la tabla de prueba
 	    console.log("entró");
 	    }
 
