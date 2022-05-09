@@ -16,9 +16,10 @@
    	    <p id="codigo"></p>
 	    <script>
 	         function extraer() {
-            	 	let part1 = document.getElementById("url1").value.substring(24, 27);
-            		let part2 = document.getElementById("url1").value.substring(28, 32);
-            		let part3 = document.getElementById("url1").value.substring(33, 36);
+			let guion = document.getElementById("url1").value.indexOf('-');
+            	 	let part1 = document.getElementById("url1").value.substring(guion-3,guion);
+            		let part2 = document.getElementById("url1").value.substring(guion+1,guion+5);
+            		let part3 = document.getElementById("url1").value.substring(guion+6,guion+9);
             		document.getElementById("codigo").innerHTML = part1+part2+part3;
         	 }
         	 document.getElementById("boton").onclick = function () {
