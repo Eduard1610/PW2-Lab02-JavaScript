@@ -6,6 +6,11 @@
 	<title>Ejercicio 5</title>
 
 	<script>
+	    
+	    function imprimirSuma(suma){
+		console.log(suma);
+		document.getElementById("suma").innerHTML=suma;
+	    }
 	    function generarTabla() {
 	    let numF = document.getElementById("nFilas").value; //número de filas
             let contenedorTabla = document.getElementById("contenedor");//div del contenedor de tabla
@@ -25,7 +30,7 @@
 	    
 	    tabla += "</table>";
 
-	    let boton = + `<button type="buton" onclick="imprimirSuma(${suma})">Suma</button>`;
+	    let boton = `<button type="buton" onclick="imprimirSuma(${suma})">Suma</button>`;
 
 	    let contenidoDiv = tabla + boton;
 
@@ -43,5 +48,6 @@
 	<div id="contenedor">
 	    <!--Aquí ira la tabla-->
 	</div>
+	<p id="suma"></p>
 
 </html>
