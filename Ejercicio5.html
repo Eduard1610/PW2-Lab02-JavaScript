@@ -9,7 +9,15 @@
 	    function generarTabla() {
 	    let numF = document.getElementById("nFilas").value; //número de filas
             let contenedorTabla = document.getElementById("contenedor");//div del contenedor de tabla
-	    let tabla = "<table><tr><td>1</td><td>2</td></tr></table>";//tabla de prueba
+	    let tabla = "<table>";//inicio de tabla
+
+	    for(let i = 1; i <= numF; i++){
+		tabla += "<tr>";
+                tabla += "<td>";
+                tabla += 1;
+                tabla += "</td>";
+                tabla += "</tr>";	
+	    }
 	    contenedorTabla.innerHTML = tabla;//reemplazando el div vacío por la tabla de prueba
 	    console.log("entró");
 	    }
