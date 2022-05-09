@@ -4,12 +4,17 @@
     <!--Este ejercicio fue trabajado en grupo a través de meet-->
 	<meta charset="UTF-8">
 	<title>Ejercicio 5</title>
+	<style>
+	    table, th, td {
+	      border: 1px solid;
+	    }
+	</style>
 
 	<script>
 	    
 	    function imprimirSuma(suma){
 		console.log(suma);
-		document.getElementById("suma").innerHTML=suma;
+		document.getElementById("suma").innerHTML= "La suma es: " + suma;
 	    }
 	    function generarTabla() {
 	    let numF = document.getElementById("nFilas").value; //número de filas
@@ -48,6 +53,7 @@
 	<div id="contenedor">
 	    <!--Aquí ira la tabla-->
 	</div>
+	<hr>
 	<p id="suma"></p>
 
 </html>
