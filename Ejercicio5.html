@@ -11,13 +11,16 @@
             let contenedorTabla = document.getElementById("contenedor");//div del contenedor de tabla
 	    let tabla = "<table>";//inicio de tabla
 
-	    for(let i = 1; i <= numF; i++){
+	    for (let i = 1; i <= numF; i++){
+		let random = Math.floor(Math.random()*100+1);
 		tabla += "<tr>";
                 tabla += "<td>";
-                tabla += 1;
+                tabla += random;
                 tabla += "</td>";
                 tabla += "</tr>";	
 	    }
+
+
 	    contenedorTabla.innerHTML = tabla;//reemplazando el div vacío por la tabla de prueba
 	    console.log("entró");
 	    }
