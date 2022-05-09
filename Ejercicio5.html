@@ -7,7 +7,11 @@
 
 	<script>
 	    function generarTabla() {
-		console.log("entró");
+	    let numF = document.getElementById("nFilas").value; //número de filas
+            let contenedorTabla = document.getElementById("contenedor");//div del contenedor de tabla
+	    let tabla = "<table><tr><td>1</td><td>2</td></tr></table>";//tabla de prueba
+	    contenedorTabla.innerHTML = tabla;//reemplazando el div vacío por la tabla de prueba
+	    console.log("entró");
 	    }
 
 	</script>
