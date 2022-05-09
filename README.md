@@ -64,16 +64,32 @@
 - Ejercicio 04: Escribir un página que reciba el URL de la sesión de google meet de hoy y devuelva el código de la sesión sin guiones separadores
 - Ejercicio 05: Escribir una página que permita calcular las suma de todos los valores de una tabla de valores dinámica. La idea es crear una página web con un formulario que te permita decir cuantos valores tendrá la tabla, luego, al enviar el formulario la tabla se debe crear dinámicamente, junto con otro botón de envió para calcular la suma.
 - Ejercicio 06: Utilice la herramienta flipgrid - https://info.flipgrid.com/ envie un video en el tema "Presentacion y ejemplo deJavaScript" ponga aquí los enlaces de sus envíos.
+    
+    -LINKS DE LOS VIDEOS DE CADA INTEGRANTE:
+        
+        -Eduardo Franshua Durand Obando: https://flipgrid.com/781bc3cb
+        -Jordy Rolando Tejada Lazo: https://flipgrid.com/e01d723b
+        -Jean Carlo Leonel Chua Aguilar: https://flipgrid.com/44a6cb34
+        -Michael Steve Hurtado Bejarano: https://flipgrid.com/s/R6KdzNJtxAaH
 #
 
 ## CUESTIONARIO
 - Pruebe este código de arrayGenerator() en la página https://jslint.com/
 - Revisar esta discusión en stackoverflow - https://stackoverflow.com/questions/4852017/how-to-initialize-an-arrays-length-in-javascript
     - ¿Cómo se pueden resolver los warnings?
+       - Usando la página recomendada por el profesor se puede ajustar un estándar de programación y así eliminar las advertencias(warnings) con buenas practicas.
     - ¿Se puede modificar la solución usando map? ¿Cómo?
 
 
+        - Si se puede modificar la solución usando Map ya que permite recorrer todo un arrelglo y transformar cada uno de sus elementos, en este caso nosotros **no** usamos map para la resolución de nuestros ejercicios.
 #
+
+## PORCENTAJE DE TRABAJO POR INTEGRANTE
+ 
+ - Eduardo Franshua Durand Obando = 90%
+ - Jordy Rolando Tejada Lazo = 80%
+ - Jean Carlo Leonel Chua Aguilar = 75%
+ - Michael Steve Hurtado Bejarano  = 70%
 
 ## REFERENCIAS
 - Javascript tutorial. https://www.w3schools.com/javascript/default.asp, 2021. Accesed: 02-09-2021.
